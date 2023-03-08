@@ -29,7 +29,6 @@ services:
     name: index_data
     mountPath: /index_data
     sizeGB: 10
-  startCommand: uvicorn chromadb.app:app --reload --workers 1 --host 0.0.0.0 --port 8000 --log-config log_config.yml
   envVars: 
     - key: CHROMA_DB_IMPL
       value: clickhouse
