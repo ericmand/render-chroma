@@ -1,7 +1,7 @@
 services:
 #clickhouse
 - type: pserv
-  name: clickhouse
+  name: chroma-clickhouse
   env: docker
   repo: https://github.com/render-examples/clickhouse.git
   plan: standard
