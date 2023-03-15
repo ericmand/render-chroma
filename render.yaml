@@ -19,8 +19,8 @@ services:
       value: 8123
 
 #server
-- type: pserv
-  name: server
+- type: web
+  name: chroma
   env: docker
   repo: https://github.com/chroma-core/chroma.git
   plan: standard
