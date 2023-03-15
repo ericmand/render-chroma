@@ -25,6 +25,7 @@ services:
   repo: https://github.com/chroma-core/chroma.git
   plan: standard
   autoDeploy: false
+  dockerCommand: uvicorn chromadb.app:app --reload --workers 1 --host 0.0.0.0 --port 8000 --log-config log_config.yml
   disk:
     name: index_data
     mountPath: /index_data
