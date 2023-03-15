@@ -34,6 +34,9 @@ services:
     - key: CHROMA_DB_IMPL
       value: clickhouse
     - key: CLICKHOUSE_HOST
-      value: clickhouse
+      fromService:
+        type: pserv
+        name: clickhouse
+        property: host
     - key: CLICKHOUSE_PORT
       value: 8123
