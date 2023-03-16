@@ -1,1 +1,1 @@
-FROM chroma-core/chroma
+FROM ghcr.io/chroma-core/chroma
