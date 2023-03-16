@@ -3,7 +3,7 @@ services:
 - type: pserv
   name: clickhouse
   env: docker
-  repo: https://github.com/render-examples/clickhouse.git
+  dockerfilePath: ./config/Dockerfile
   plan: standard
   autoDeploy: false
   disk:
@@ -40,3 +40,6 @@ services:
         property: host
     - key: CLICKHOUSE_PORT
       value: 8123
+
+
+  
